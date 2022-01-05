@@ -1,0 +1,49 @@
+/*********** Переменные ***********/
+:root {
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #f5f4fa;
+    --accent-color: #2196f3;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --footer-bg-color: #2f303a;
+    --footer-primary-text-color: #ffffff;
+    --footer-secondary-text-color: rgba(255, 255, 255, 0.6);
+}
+
+/*********** Сброс ненужных стилей ***********/
+.link {
+    text-decoration: none;
+}
+
+/*********** Визуальное скрытие элементов ***********/
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/*********** Стили для body ***********/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+/*********** Стили для контейнера ***********/
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
