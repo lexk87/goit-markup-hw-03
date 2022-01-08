@@ -1,4 +1,4 @@
-/*********** Переменные ***********/
+/* Переменные */
 :root {
     --primary-bg-color: #ffffff;
     --secondary-bg-color: #f5f4fa;
@@ -10,12 +10,30 @@
     --footer-secondary-text-color: rgba(255, 255, 255, 0.6);
 }
 
-/*********** Сброс ненужных стилей ***********/
+/* Сброс ненужных стилей */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
 .link {
     text-decoration: none;
 }
 
-/*********** Визуальное скрытие элементов ***********/
+/* Визуальное скрытие элементов */
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -29,21 +47,93 @@
     margin: -1px;
 }
 
-/*********** Стили для body ***********/
+/* Стили для body */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 400;
     letter-spacing: 0.03em;
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
 }
 
-/*********** Стили для контейнера ***********/
+/* Стили для контейнера */
 .container {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+/* Хедер страницы */
+/* Контейнер хедера */
+.site-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-container,
+.header-nav-list,
+.header-contacts-list {
+    display: flex;
+    align-items: center;
+}
+
+/* Логотип */
+.logo {
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color: var(--accent-color);
+}
+
+/* Логотип хедера */
+.header-logo {
+    margin-right: 93px;
+}
+
+.header-logo-color {
+    color: var(--primary-text-color);
+}
+
+/* Навигация */
+.header-nav {
+    margin-right: auto;
+}
+
+.header-nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-nav-list-item-link {
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.header-nav-list-item-link:hover,
+.header-nav-list-item-link:focus {
+    color: var(--accent-color);
+}
+
+.current-link {
+    color: var(--accent-color);
+}
+
+/* Контакты */
+.header-contacts-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-contacts-list-item-link {
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.header-contacts-list-item-link:hover,
+.header-contacts-list-item-link:focus {
+    color: var(--accent-color);
 }
