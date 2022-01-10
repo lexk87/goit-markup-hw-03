@@ -104,10 +104,10 @@ img {
 }
 
 /* Контейнер хедера */
-.site-header {
+/* .site-header {
     padding-top: 24px;
     padding-bottom: 25px;
-}
+} */
 
 .header-container,
 .header-nav-list,
@@ -127,6 +127,8 @@ img {
 /* Логотип хедера */
 .header-logo {
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .header-logo-color {
@@ -158,6 +160,19 @@ img {
     color: var(--accent-color);
 }
 
+.header-logo,
+.footer-logo,
+.header-nav-list-item-link,
+.header-contacts-list-item-link {
+    display: block;
+}
+
+.header-nav-list-item-link,
+.header-contacts-list-item-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 /* Контакты */
 .header-contacts-list-item:not(:last-child) {
     margin-right: 50px;
@@ -177,8 +192,6 @@ img {
 
 /* Основной контент сайта */
 /* Герой */
-.hero {
-}
 
 .hero-container {
     background-color: var(--footer-bg-color);
@@ -314,7 +327,6 @@ img {
 
 /* Логотип футера */
 .footer-logo {
-    display: inline-block;
     margin-bottom: 20px;
 }
 
